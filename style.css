@@ -1,0 +1,370 @@
+*{
+  font-family: "Titillium web", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 8rem 0.2rem 8rem;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem 0.2rem 8rem;
+}
+
+.header-top{
+  width: 100%;
+  display: inherit;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.left-sign{
+  font-size: 1rem;
+}
+
+.left-sign h4{
+  font-weight: 700;
+  color: #00b3E5;
+}
+
+.left-sign h4:hover{
+  color: #036681;
+}
+
+.left-sign p{
+  color: #999999;
+  font-weight: 600;
+}
+
+.left-sign p:hover{
+  text-decoration: underline;
+}
+
+.right-sign{
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: red;
+  text-align: center;
+  padding: 0.2rem 1.5rem;
+  height: fit-content;
+  border-radius: 0.25rem;
+}
+
+.right-sign p{
+  color: white;
+}
+
+.top-navbar{
+  margin: 0.6rem 0 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-navbar ul{
+  font-size: 1.1rem;
+  font-weight: 700;
+  list-style: none;
+  display: inherit;
+  gap: 1.1rem;
+}
+
+.extras li, .current-topic{
+  color: #00b3E5;
+}
+
+.current-topic, .topics li:hover, .extras li:hover{
+  border-bottom: black solid 0.35rem;
+}
+
+.others a:hover{
+  color:#999999;
+}
+
+.body-container{
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 1rem;
+}
+
+.main-article{
+  margin-top: 0;
+}
+
+.main-article h1{
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.social{
+  margin-bottom: 2rem;
+}
+
+.date{
+  margin-bottom: 1rem;
+}
+
+.author{
+  margin-bottom: 0.5rem;
+}
+
+.author a{
+  color: #00b3E5;
+  font-weight: 700;
+}
+
+.article-img-subtext{
+  font-size: 0.7rem;
+}
+
+.article{
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.read-suggestion{
+  background-color: #F5F5F5;
+  padding: 0.6rem;
+}
+
+.read-suggestion a{
+  color: #00b3E5;
+  font-weight: 600;
+}
+
+.reference{
+  margin-bottom: 2rem;
+}
+
+.reference a{
+  color: #00b3E5;
+}
+
+.related-topics{
+  display: flex;
+  gap: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.topic{
+  background-color: #005587;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  font-weight: 700;
+}
+
+.topic:hover{
+  background-color: #00b3E5;
+}
+
+.topic span{
+  color:white;
+}
+
+.side-navbar{
+  display: flex;
+  flex-direction: column;
+}
+
+.recomendations-filter, .recomendations{
+  display: flex;
+  list-style-type: none;
+  gap: 0.3rem;
+}
+
+.recomendations-filter li, .recomendations li{
+  background-color: #F5F5F5;
+}
+
+.recomendations-filter{
+  justify-content: space-between;
+  margin-bottom: 0.36rem;
+}
+
+.recomendations-filter li{
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.3rem 1rem;
+}
+
+.current-recomendations li{
+  background-color: #00b3E5;
+  color: white;
+}
+
+.recomendations{
+  flex-direction: column;
+}
+
+
+.recomended-article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.7rem;
+  gap: 1rem;
+}
+
+.recomended-article a p{
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #333333;
+}
+
+.recomended-article a p em{
+  color: #333333;
+}
+
+.article-number{
+  font-size: 2rem;
+  color: #00b3E5;
+  font-weight: 700;
+}
+
+.recomended-article:hover, .recomendations-filter li:hover{
+  background-color: #DDDDDD;
+}
+
+.current-recomendations li:hover{
+  background-color: #00b3E5;
+}
+
+.related-news p{
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+
+.rn-container{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 7rem;
+}
+
+.rn-container p{
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.related-new:hover p{
+  color:#00b3E5;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  padding: 0.8rem 8rem 0.2rem 8rem;
+}
+
+.sign-up{
+  margin-bottom: 2rem;
+}
+
+.sign-up p{
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.sign-up label, .sign-up #email{
+  font-size: 1.05rem;
+  color: #555555;
+  margin-right: 0.4rem;
+}
+
+.sign-up #email{
+  border: none;
+  background-color: inherit;
+  border-bottom: #333333 solid 2px;
+  width: 20rem;
+  height: 2rem;
+}
+
+.sign-up #submit-btn, .cookie-settings, .cookie-settings span{
+  background-color: #005587;
+  color:white;
+  border: none;
+  border-radius: 0.3rem;
+  width: 15rem;
+  height: 2.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.sign-up #submit-btn:hover{
+  cursor: pointer;
+  background-color: #002299;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact ul{
+  display: flex;
+  list-style-type: none;
+  gap: 1.1rem;
+  justify-content: center;
+}
+
+.contact li{
+  font-weight: 500;
+}
+
+.contact li a:hover{
+  color: #00b3E5;
+}
+
+.top-links{
+  margin: 1rem 0;
+}
+
+.mid-links{
+  margin: 0.5rem 0;
+}
+
+.bot-links{
+  margin: 0.5rem 0 1rem 0;
+}
+
+.cookie-settings{
+  width: 10rem;
+  margin-bottom: 7rem;
+  align-self: center;
+}
+
+.cookie-settings:hover, .cookie-settings:hover span{
+  cursor:pointer;
+  background-color: #00b3E5;
+}
+
+.footer-end{
+  display: flex;
+  padding-bottom: 3rem;
+  justify-content: space-between;
+}
+
+.footer-end p{
+  font-size: 0.95rem;
+  font-weight: 500;  
+}
+
+.back-to-top{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.back-to-top span a{
+  margin-right: 1rem;
+}
